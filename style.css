@@ -1,0 +1,654 @@
+/* ========================
+   RESET ET BASE
+======================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fdfdfd;
+}
+
+/* ========================
+   NAVIGATION
+======================== */
+header nav {
+    background-color: #007BFF;
+    padding: 15px 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffe600;
+}
+
+/* ========================
+   HEADER PRINCIPAL
+======================== */
+header h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #007BFF;
+    font-size: 2rem;
+}
+
+header img {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+header p {
+    text-align: center;
+    margin: 10px auto 30px auto;
+    font-size: 1.1rem;
+}
+
+/* ========================
+   SECTION À PROPOS
+======================== */
+#about {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+}
+
+#about h2 {
+    font-size: 1.8rem;
+    color: #007BFF;
+    margin-bottom: 15px;
+}
+
+#about p {
+    font-size: 1.1rem;
+}
+
+/* ========================
+   BOUTONS
+======================== */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* ========================
+   FOOTER
+======================== */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 20px 20px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.footer-item h3 {
+    margin-bottom: 10px;
+    color: #ffe600;
+}
+
+.footer-item p {
+    font-size: 0.95rem;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007BFF;
+}
+
+.footer-note {
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+/* ========================
+   MEDIA QUERIES
+======================== */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #about h2 {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+
+    header img {
+        width: 150px;
+    }
+}
+/* ========================
+   RESET ET BASE
+======================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fdfdfd;
+}
+
+/* ========================
+   NAVIGATION
+======================== */
+.main-nav {
+    background-color: #007BFF;
+    padding: 15px 20px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-nav ul li a:hover {
+    color: #ffe600;
+}
+
+/* ========================
+   HEADER CV
+======================== */
+.cv-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+    background-color: #f0f8ff;
+}
+
+.cv-header-text h1 {
+    font-size: 2rem;
+    color: #007BFF;
+}
+
+.cv-header-text p {
+    font-size: 1.1rem;
+}
+
+.cv-header-image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ========================
+   SECTIONS
+======================== */
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section h2 {
+    color: #007BFF;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* ========================
+   EXPERIENCE
+======================== */
+#experience .experience-item {
+    background-color: #f9f9f9;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #007BFF;
+    border-radius: 5px;
+}
+
+#experience .experience-item h3 {
+    color: #007BFF;
+    margin-bottom: 5px;
+}
+
+#experience .experience-item p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+#experience .experience-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* ========================
+   FORMATION
+======================== */
+#formation .formation-item {
+    background-color: #f9f9f9;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #007BFF;
+    border-radius: 5px;
+}
+
+#formation .formation-item h3 {
+    color: #007BFF;
+    margin-bottom: 5px;
+}
+
+#formation .formation-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* ========================
+   COMPETENCES
+======================== */
+#competences .competences-techniques,
+#competences .competences-personnelles {
+    background-color: #f9f9f9;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #007BFF;
+    border-radius: 5px;
+}
+
+#competences h3 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+#competences ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* ========================
+   LANGUES
+======================== */
+#langues ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* ========================
+   FOOTER
+======================== */
+.cv-footer {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.cv-footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.cv-footer .social-icons a:hover {
+    color: #007BFF;
+}
+
+.cv-footer .footer-note {
+    font-size: 0.85rem;
+    color: #ccc;
+    margin-top: 15px;
+}
+
+/* ========================
+   MEDIA QUERIES
+======================== */
+@media (max-width: 768px) {
+    .cv-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cv-header-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .cv-header-text p {
+        font-size: 1rem;
+    }
+
+    .cv-header-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    section h2 {
+        font-size: 1.4rem;
+    }
+}
+/* ========================
+   RESET ET BASE
+======================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fdfdfd;
+}
+
+/* ========================
+   NAVIGATION
+======================== */
+.main-nav {
+    background-color: #007BFF;
+    padding: 15px 20px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-nav ul li a:hover {
+    color: #ffe600;
+}
+
+/* ========================
+   HEADER CONTACT
+======================== */
+.contact-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    background-color: #f0f8ff;
+}
+
+.contact-header-text h1 {
+    font-size: 2rem;
+    color: #007BFF;
+}
+
+.contact-header-text p {
+    font-size: 1.1rem;
+}
+
+.contact-header-image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ========================
+   FORMULAIRE DE CONTACT
+======================== */
+#contact-form-section {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form .btn:hover {
+    background-color: #0056b3;
+}
+
+/* ========================
+   TEMOIGNAGES
+======================== */
+#temoignages {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+#temoignages h2 {
+    color: #007BFF;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.temoignage-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.temoignage-photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.temoignage-text h3 {
+    color: #007BFF;
+    margin-bottom: 5px;
+}
+
+.temoignage-text .role {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.temoignage-text .quote {
+    font-size: 1rem;
+}
+
+/* ========================
+   FOOTER
+======================== */
+.contact-footer {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.contact-footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.contact-footer .social-icons a:hover {
+    color: #007BFF;
+}
+
+.contact-footer .footer-note {
+    font-size: 0.85rem;
+    color: #ccc;
+    margin-top: 15px;
+}
+
+/* ========================
+   MEDIA QUERIES
+======================== */
+@media (max-width: 768px) {
+    .contact-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .temoignage-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .temoignage-photo img {
+        margin-bottom: 10px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-header-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-header-text p {
+        font-size: 1rem;
+    }
+
+    .contact-header-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .contact-form .btn {
+        width: 100%;
+    }
+}
